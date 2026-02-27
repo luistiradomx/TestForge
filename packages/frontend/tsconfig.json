@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "jsx": "react-jsx",
+    "rootDir": "src",
+    "outDir": "dist",
+    "lib": ["ES2020", "DOM"],
+    "paths": {
+      "@testforge/core": ["../core/src"]
+    }
+  },
+  "references": [
+    { "path": "../core" }
+  ],
+  "include": ["src/**/*"]
+}
