@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "paths": {
+      "@testforge/core": ["../../packages/core/src"],
+      "@testforge/plugin-sdk": ["../../packages/plugin-sdk/src"]
+    }
+  },
+  "references": [
+    { "path": "../../packages/core" },
+    { "path": "../../packages/plugin-sdk" }
+  ],
+  "include": ["src/**/*"]
+}
