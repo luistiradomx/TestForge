@@ -1,0 +1,113 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  min-height: 100vh;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.sidebar__logo-icon {
+  font-size: 1.6rem;
+  color: #6366f1;
+}
+
+.sidebar__logo-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: -0.01em;
+}
+
+.sidebar__nav {
+  flex: 1;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar__link:hover {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+.sidebar__link--active {
+  background: #1e293b;
+  color: #a5b4fc;
+}
+
+.sidebar__link-icon {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.sidebar__link-label {
+  flex: 1;
+}
+
+.sidebar__footer {
+  padding: 16px;
+  border-top: 1px solid #1e293b;
+}
+
+.sidebar__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar__avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sidebar__user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__user-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.sidebar__user-role {
+  font-size: 0.7rem;
+  color: #64748b;
+}

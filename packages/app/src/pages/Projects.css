@@ -1,0 +1,148 @@
+.page-content { padding: 24px; }
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px;
+}
+
+.page-subtitle { color: #64748b; font-size: 0.875rem; }
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.btn:hover { opacity: 0.85; }
+.btn--primary { background: #4f46e5; color: #fff; }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.15s;
+}
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.project-card__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.project-card__meta { flex: 1; }
+
+.project-card__name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 2px;
+}
+
+.project-card__repo {
+  font-size: 0.72rem;
+  color: #6366f1;
+  text-decoration: none;
+}
+.project-card__repo:hover { text-decoration: underline; }
+
+.project-card__desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.project-card__stats {
+  display: flex;
+  gap: 20px;
+  padding: 12px 0;
+  border-top: 1px solid #f8fafc;
+  border-bottom: 1px solid #f8fafc;
+}
+
+.project-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-stat__value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.project-stat__label {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.project-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-card__envs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.env-tag {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  background: #f0fdf4;
+  color: #166534;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.project-card__last-run {
+  font-size: 0.78rem;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+.project-card__last-run:hover { text-decoration: underline; }
