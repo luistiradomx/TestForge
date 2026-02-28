@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "paths": {
+      "@testforge/core": ["../core/src"],
+      "@testforge/execution-engine": ["../execution-engine/src"],
+      "@testforge/locator-engine": ["../locator-engine/src"],
+      "@testforge/plugin-sdk": ["../plugin-sdk/src"],
+      "@testforge/tia": ["../tia/src"],
+      "@testforge/trace-viewer": ["../trace-viewer/src"],
+      "@testforge/visual-regression": ["../visual-regression/src"]
+    }
+  },
+  "references": [
+    { "path": "../core" },
+    { "path": "../execution-engine" },
+    { "path": "../locator-engine" },
+    { "path": "../plugin-sdk" },
+    { "path": "../tia" },
+    { "path": "../trace-viewer" },
+    { "path": "../visual-regression" }
+  ],
+  "include": ["src/**/*"]
+}

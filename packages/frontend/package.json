@@ -1,0 +1,25 @@
+{
+  "name": "@testforge/frontend",
+  "version": "1.0.0",
+  "description": "TestForge SaaS frontend — React dashboard, test editor, trace viewer, and results",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest --passWithNoTests",
+    "lint": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@testforge/core": "1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "@types/jest": "^29.5.0",
+    "rimraf": "^5.0.0"
+  }
+}

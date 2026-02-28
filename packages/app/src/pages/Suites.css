@@ -1,0 +1,88 @@
+.suite-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+
+.suites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.suite-card {
+  background: #fff;
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  transition: box-shadow 0.15s;
+}
+.suite-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+.suite-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.suite-card__name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.suite-card__project {
+  font-size: 0.7rem;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 2px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.suite-card__desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.suite-card__tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.tag {
+  font-size: 0.68rem;
+  background: #f8fafc;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.suite-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid #f8fafc;
+}
+
+.suite-stat { display: flex; align-items: baseline; gap: 4px; }
+.suite-stat__value { font-size: 1.1rem; font-weight: 700; color: #1e293b; }
+.suite-stat__label { font-size: 0.72rem; color: #94a3b8; }
+
+.suite-card__date { font-size: 0.7rem; color: #94a3b8; }
+
+/* shared */
+.page-content { padding: 24px; }
+.page-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; }
+.page-title { font-size: 1.5rem; font-weight: 700; color: #0f172a; margin: 0 0 4px; }
+.page-subtitle { color: #64748b; font-size: 0.875rem; }
+.btn { padding: 8px 16px; border-radius: 8px; font-size: 0.875rem; font-weight: 600; border: none; cursor: pointer; transition: opacity 0.15s; }
+.btn:hover { opacity: 0.85; }
+.btn--primary { background: #4f46e5; color: #fff; }
+.filter-btn { padding: 6px 12px; border: 1px solid #e2e8f0; border-radius: 20px; font-size: 0.75rem; font-weight: 500; background: #fff; color: #64748b; cursor: pointer; transition: all 0.15s; }
+.filter-btn:hover { border-color: #6366f1; color: #4f46e5; }
+.filter-btn--active { background: #eef2ff; border-color: #6366f1; color: #4f46e5; font-weight: 600; }

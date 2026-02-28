@@ -1,0 +1,1 @@
+{"version":3,"file":"semantic-analyzer.d.ts","sourceRoot":"","sources":["../../src/semantic/semantic-analyzer.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,cAAc,EAAE,MAAM,iBAAiB,CAAC;AAEnE;;;;GAIG;AACH,qBAAa,gBAAgB;IAC3B;;;;OAIG;IACH,kBAAkB,CAAC,IAAI,EAAE,MAAM,EAAE,OAAO,EAAE,cAAc,GAAG,gBAAgB,EAAE;IAwC7E;;OAEG;IACH,OAAO,CAAC,4BAA4B;CAgBrC"}
